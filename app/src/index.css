@@ -1,0 +1,117 @@
+
+
+.container{
+  padding: 16px 50px;
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  align-items: center;
+
+}
+@media screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    height: auto; /* Adjust height as needed */
+  }
+}
+body{
+    background-color: #EC8F5E;
+    /* background:linear-gradient(to right, #9900ff,#cc80ff) ; */
+
+    color: white;
+
+
+}
+
+.search input{
+background-color: transparent;
+border :2px solid red;
+border-radius: 5px;
+color: white;
+padding: 10px;
+width: 250px;
+font-weight: bold;
+}
+
+.filter-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+padding-bottom: 30px;
+
+}
+ button{
+  background-color: #ff4343;
+  border-radius: 5px;
+  padding: 8px 14px;
+  border: none;
+  color: white;
+ cursor: pointer;
+
+}
+.selected {
+  background-color: #611010;
+  /* Add more styles as needed */
+}
+button:hover{
+  background-color: #611010;
+
+
+}
+.food-card-container{
+  
+  min-height: 80vh;
+  border-radius: 12px;
+  background-image: url('./../public/bg.png');
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px;
+  row-gap: 32px;
+  column-gap: 20px;
+  
+
+}
+.nofood{
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 100px;
+font-size: 25px;
+}
+.food_info{
+  width: 340px;
+  height: 300px;
+  padding: 10px;
+ 
+  border: 0.66px solid;
+
+  border-image-source: radial-gradient(
+      80.69% 208.78% at 108.28% 112.58%,
+      #eabfff 0%,
+      rgba(135, 38, 183, 0) 100%
+    ),
+    radial-gradient(
+      80.38% 222.5% at -13.75% -12.36%,
+      #98f9ff 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+
+  background: url(.png),
+    radial-gradient(
+      90.16% 143.01% at 15.32% 21.04%,
+      rgba(165, 239, 255, 0.2) 0%,
+      rgba(110, 191, 244, 0.0447917) 77.08%,
+      rgba(70, 144, 213, 0) 100%
+    );
+
+
+  border-radius: 20px;
+}
+
+
+
+
